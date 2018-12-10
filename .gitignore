@@ -1,0 +1,10 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# production
+/build
+
+# misc
+.idea/
+.vscode/
+*sencha-error-*
+*.iml
