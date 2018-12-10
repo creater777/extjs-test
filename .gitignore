@@ -8,3 +8,4 @@
 .vscode/
 *sencha-error-*
 *.iml
+./bootstrap.*
