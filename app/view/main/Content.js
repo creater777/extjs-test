@@ -21,19 +21,35 @@ Ext.define('TestApp.view.main.Content', {
 
     items: [
         {
-            // title: 'Home',
+            title: 'Продукция',
             // iconCls: 'x-fa fa-home',
             layout: 'fit',
             items: [{
                 xtype: 'tableData',
                 height: 400,
                 columns: [
-                    { text: 'Name',  dataIndex: 'name', width: 100 },
-                    { text: 'Email', dataIndex: 'email', width: 230 },
-                    { text: 'Phone', dataIndex: 'phone', width: 150 }
+                    {
+                        text: 'Наименование',
+                        dataIndex: 'name',
+                        width: 300
+                    },
+                    {
+                        text: 'Дата',
+                        dataIndex: 'date',
+                        width: 200,
+                        renderer: Ext.util.Format.dateRenderer('d.m.Y')
+                    },
+                    {
+                        text: 'В производстве',
+                        dataIndex: 'in_product',
+                        width: 150,
+                        renderer: function(value){
+                            return value ? 'Да' : 'Нет'
+                        }
+                    }
                 ],
                 store: {
-                    type: 'personnel'
+                    type: 'products'
                 }
             }]
         }

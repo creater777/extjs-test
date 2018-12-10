@@ -6,12 +6,14 @@ Ext.define('TestApp.view.table.Table', {
     xtype: 'tableData',
 
     requires: [
-        'TestApp.store.Personnel'
+        'TestApp.store.Products'
     ],
-
-    title: 'Personnel',
+    height: 400,
+    defaults: {
+        height: 400,
+    },
 
     listeners: {
-        select: 'onItemSelected'
+        // select: 'onItemSelected'
     }
 });

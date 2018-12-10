@@ -8,9 +8,9 @@ Ext.define('TestApp.store.Products', {
     ],
 
     data: { items: [
-            { id: 1, name: 'Product A', date: 1544409922000, in_product: true },
-            { id: 2, name: 'Product B', date: 1544409922000, in_product: true  },
-            { id: 3, name: 'Product C', date: 1544409922000, in_product: true  }
+            { id: 1, name: 'Product A', date: '10.12.2018', in_product: true },
+            { id: 2, name: 'Product B', date: '10.12.2018', in_product: true  },
+            { id: 3, name: 'Product C', date: '10.12.2018', in_product: true  }
         ]},
 
     proxy: {
